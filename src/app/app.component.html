@@ -1,3 +1,9 @@
-<app-header></app-header>
-  
-<router-outlet></router-outlet>
+<app-header></app-header>  
+<section class="container mx-auto mt-10 h-[70vh]">
+    <router-outlet></router-outlet>
+</section>
+<footer class="p-3 container mx-auto mt-10 h-[10vh] justify-between items-center flex">
+    <button mat-fab mat-button (click)="openDialog()" color="primary" class="absolute bottom-0 left-0">
+        <mat-icon>description</mat-icon>
+    </button>
+</footer>

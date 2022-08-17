@@ -3,3 +3,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: Hacked;
+    src: url("./assets/font/HACKED.ttf");
+}
+
+.Hacked{
+    font-family: Hacked;
+}
+
+.neon{
+    @apply Hacked text-9xl text-indigo-700 text-center;
+}
+
+.nav-active{
+
+    @apply text-indigo-500;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,11 +1,31 @@
-<header class="flex w-full p-6 px-20 bg-gray-900 shadow-2xl justify-between items-center">
-    <h1 class="text-gray-200 font-sans:[Roboto] font-bold text-2xl">21 dias de código</h1>
-    <nav class="text-gray-200 font-sans:[Roboto] font-bold text-md">
-        <a href="#" class="px-4">Hello World!</a>
-        <a href="#" class="px-4">Botão</a>
-        <a href="#" class="px-4">Calculadora</a>
-        <a href="#" class="px-4">404</a>
-        <a href="#" class="px-4">Card</a>
-        <a href="#" class="px-4">Contador</a>
-    </nav>
+<header class=" w-full p-6 shadow-lg bg-gradient-to-t from-black to-gray-900   duration-300 opcaity">
+    <div class="flex container mx-auto justify-between items-center">
+        
+        <a href="/" class="p-3 py-2 bg-indigo-700 rounded-lg hover:scale-110 hover:bg-indigo-600 duration-300 text-white font-bold text-lg">Home</a>
+
+
+        <a [matMenuTriggerFor]="menu" aria-label="menu burger" class="w-8 flex sm:hidden md:hidden cursor-pointer">
+            <mat-icon color="primary">menu</mat-icon>
+        </a>
+        <mat-menu #menu="matMenu" class="bg-gray-900 w-40 flex justify-center">
+            <a mat-menu-item href="/hellowworld" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Hello World!</a>
+            <a mat-menu-item disabled href="/" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Botão</a>
+            <a mat-menu-item disabled href="/" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Calculadora</a>
+            <a mat-menu-item disabled href="/" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">404</a>
+            <a mat-menu-item disabled href="/" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Card</a>
+            <a mat-menu-item disabled href="/" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Contador</a>
+        </mat-menu>
+
+
+        <nav class="text-gray-600 font-medium text-lg h-full leading-none items-center space-x-5 divide-x divide-gray-500 hidden sm:flex md:flex">
+            <a href="/hellowworld" class="pl-5 hover:text-indigo-500 duration-300 text-white nav-active">Hello World!</a>
+            <a href="/" class="pl-5 hover:text-indigo-500 duration-300">Botão</a>
+            <a href="/" class="pl-5 hover:text-indigo-500 duration-300">Calculadora</a>
+            <a href="/" class="pl-5 hover:text-indigo-500 duration-300">404</a>
+            <a href="/" class="pl-5 hover:text-indigo-500 duration-300">Card</a>
+            <a href="/" class="pl-5 hover:text-indigo-500 duration-300">Contador</a>
+        </nav>
+
+
+    </div>
 </header>
