@@ -4,9 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    background-image: url(./assets/bg-stars.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: black; */
+}
+
 @font-face {
     font-family: Hacked;
     src: url("./assets/font/HACKED.ttf");
+}
+
+@font-face {
+    font-family: Digital;
+    src: url("./assets/font/Open24DisplaySt.ttf");
+}
+
+.Digital{
+    font-family: Digital;
 }
 
 .Hacked{
@@ -14,7 +31,7 @@
 }
 
 .neon{
-    @apply Hacked text-9xl text-indigo-700 text-center;
+    @apply Hacked text-indigo-700;
 }
 
 .nav-active{

@@ -7,11 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  isMenuOpen = false;
+  // public userId = {};
 
-  constructor() { }
+  // constructor( private route: ActivatedRoute ) {
+  //     this.route.params.subscribe(params => this.userId = params);
+      
+  // }
 
-  ngOnInit(): void {
+  // ngOnInit(): void {
+  //   this.route.params.subscribe(params => this.userId = params);
+  //   console.log(this.userId);
+  // }
+
+
+
+  constructor() {}
+
+  ngOnInit(): void{
+   
   }
 
 

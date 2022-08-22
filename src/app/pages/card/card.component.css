@@ -1,0 +1,11 @@
+.card{
+    @apply w-96 h-[35rem] bg-black bg-opacity-10 rounded-3xl border border-white border-r-0 border-b-0 border-opacity-30 backdrop-filter backdrop-blur-sm shadow-5xl z-50;
+}
+
+.logo{
+    background-image: url(../../../assets/logo-rocketseat.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 1rem black;
+}

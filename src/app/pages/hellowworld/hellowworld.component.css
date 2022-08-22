@@ -1,5 +1,5 @@
 .animate-text{
-    animation: blinkCursor 1000ms steps(30) infinite normal, typing steps(30) 4s 1s normal;
+    animation: blinkCursor 1000ms steps(30) infinite normal, typing 4s steps(30) normal;
     white-space: nowrap;
     overflow: hidden;
     width: 680px;
@@ -7,7 +7,7 @@
 
 @keyframes blinkCursor {
     from {
-        border-right: 3px solid #ffffff;
+        border-right: 3px solid #cccccc;
     }
     to {
         border-color: transparent;

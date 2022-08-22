@@ -16,4 +16,5 @@ export class AppComponent {
     this.dialog.open(InstagramComponent);
   }
 
+
 }

@@ -1,0 +1,101 @@
+input[type=checkbox]{
+    visibility: hidden;
+}
+
+/* bg com input false */
+label{
+    cursor: pointer;
+    width: 5.2rem;
+    height: 2.6rem;
+    border-radius: 10rem;
+    position: relative;
+    /* background-color: rgb(67 56 202 / 1); */
+    background-color: black;
+    box-shadow: inset 0 0 1em rgb(67 56 202 / 1);
+    float: right;
+    transition: .3s;
+}
+
+/* ball com input false */
+label::after{
+    content: '';
+    position: absolute;
+    top: .3rem;
+    left: .3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 .5em black;
+    transition: .3s;
+}
+
+
+/* bg com input true */
+input:checked + label{
+    background-color: rgb(67 56 202 / 1);
+    animation: neon-button 1s alternate infinite ease-in-out;
+}
+
+/* ball com input true */
+input:checked + label::after{
+    left: calc(100%-.5rem);
+    transform: translateX(130%);
+}
+
+/* .theme-bottom{
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+} */
+
+@keyframes neon-button {
+    from{
+        box-shadow: inset 0 0 .5em black;
+    }
+    to{
+        box-shadow: inset 0 0 .5em rgba(0, 0, 0, .5);
+    }
+}
+
+/* ============================= BACKGROUND ===================================== */
+
+#bg-bubbles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bubbles{
+    position: relative;
+    display: hidden;
+    /* display: flex; */
+}
+
+#bubbles span{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgb(67 56 202 / 1);
+    box-shadow: 0 0 .5em rgb(96, 44, 216),0 0 2em rgb(92, 43, 226),0 0 5em blue;
+    filter: drop-shadow(0 0 .5rem blueviolet);
+
+    animation: animate linear infinite;
+    animation-duration: calc(90s / var(--i));
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{  
+        transform: translateY(-10vh) scale(1);
+    }
+}
+

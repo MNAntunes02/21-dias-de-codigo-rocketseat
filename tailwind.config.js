@@ -26,6 +26,9 @@ module.exports = {
             '0 35px 35px rgba(49, 46, 129, 0.25)',
             '0 45px 65px rgba(49, 46, 129, 0.15)'
         ]
+      },
+      boxShadow:{
+        '5xl' : '20px 20px 50px rgba(0, 0, 0, .5)'
       }
     },
   },

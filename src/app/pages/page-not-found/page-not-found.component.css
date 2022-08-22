@@ -1,0 +1,17 @@
+@keyframes neon {
+    from{
+        filter: drop-shadow(0 0 6rem rgb(79 70 229));
+    }
+    to{
+        filter: drop-shadow(0 0 10rem rgb(79 70 229));
+    }
+}
+
+
+p{
+    animation: neon 3s alternate infinite ease-in-out;
+}
+
+.shadow-inset{
+    box-shadow: inset 0 0 1rem black;
+}
