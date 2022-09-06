@@ -6,6 +6,7 @@
 
 body{
     background-image: url(./assets/bg-stars.jpg);
+    /* background-image: url(./assets/blue-sky.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,3 +42,4 @@ body{
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

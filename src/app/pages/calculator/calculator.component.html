@@ -10,8 +10,8 @@
             <p class="text-2xl py-4 leading-none text-right pr-2 text-gray-300">RS-21<br><span class="text-sm">Marmitech</span></p>
         </div>
         <div class="w-full h-28 text-5xl text-right Digital bg-emerald-500 text-emerald-900 p-2 rounded-xl shadow-inside-tela overflow-auto break-words">
-            <div id="previous-operation" class="text-3xl "></div>
-            <div id="current-operation"></div>
+            <div id="previous-operation" class="text-3xl ">{{previous}} {{op}}.</div>
+            <div id="current-operation">{{current}}.</div>
         </div>
         <div class="flex items-end text-xl gap-5 p-1 py-5 h-30">
             <button class="button-on" #bton (click)="ligarCalc()">ON</button>
@@ -22,26 +22,26 @@
             <div class="w-full text-center text-gray-300">M-<button class="button-memory">-</button></div>
             <div class="w-full text-center text-gray-300">M+<button class="button-memory">-</button></div>            
         </div>
-        <div id="buttons-container" class="grid grid-cols-4 text-lg gap-2 p-1 text-gray-300" #minhadiv>   
-            <button class="button-calc" #btoff>OFF</button>
-            <button class="button-calc">-/</button>
-            <button class="button-calc">&#37;</button>
-            <button class="button-calc">&#247;</button>
-            <button class="button-calc">7</button>
-            <button class="button-calc">8</button>
-            <button class="button-calc">9</button>
-            <button class="button-calc">*</button>
-            <button class="button-calc">4</button>
-            <button class="button-calc">5</button>
-            <button class="button-calc">6</button>
-            <button class="button-calc">-</button>
-            <button class="button-calc">1</button>
-            <button class="button-calc">2</button>
-            <button class="button-calc">3</button>
-            <button class="p-4 w-20 rounded-xl bg-indigo-700 row-span-2 shadow-buttons hover:bg-indigo-800 transition-colors text-gray-300">+</button>
-            <button class="button-calc">0</button>
-            <button class="button-calc">.</button>
-            <button class="button-calc">=</button>
+        <div id="buttons-container" class="grid grid-cols-4 text-lg gap-2 p-1 text-gray-300">   
+            <button class="button-calc" #gridButtons (click)="returnValue('off')">OFF</button>
+            <button class="button-calc" #gridButtons (click)="returnValue('ce')">CE</button>
+            <button class="button-calc" #gridButtons (click)="returnValue('%')">&#37;</button>
+            <button class="button-calc" #gridButtons (click)="returnValue('/')">&#247;</button>
+            <button class="button-calc" #gridButtons (click)="returnValue(7)">7</button>
+            <button class="button-calc" #gridButtons (click)="returnValue(8)">8</button>
+            <button class="button-calc" #gridButtons (click)="returnValue(9)">9</button>
+            <button class="button-calc" #gridButtons (click)="returnValue('*')">*</button>
+            <button class="button-calc" #gridButtons (click)="returnValue(4)">4</button>
+            <button class="button-calc" #gridButtons (click)="returnValue(5)">5</button>
+            <button class="button-calc" #gridButtons (click)="returnValue(6)">6</button>
+            <button class="button-calc" #gridButtons (click)="returnValue('-')">-</button>
+            <button class="button-calc" #gridButtons (click)="returnValue(1)">1</button>
+            <button class="button-calc" #gridButtons (click)="returnValue(2)">2</button>
+            <button class="button-calc" #gridButtons (click)="returnValue(3)">3</button>
+            <button class="p-4 w-20 rounded-xl bg-indigo-700 row-span-2 shadow-buttons hover:bg-indigo-800 transition-colors text-gray-300" #gridButtons (click)="returnValue('+')">+</button>
+            <button class="button-calc" #gridButtons (click)="returnValue(0)">0</button>
+            <button class="button-calc" #gridButtons (click)="returnValue('.')">.</button>
+            <button class="button-calc" #gridButtons (click)="returnValue('=')">=</button>
         </div>
     </div>
 </div>

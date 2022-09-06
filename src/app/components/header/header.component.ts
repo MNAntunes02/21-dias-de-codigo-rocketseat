@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AppComponent } from '../../app.component'
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+
 
   // public userId = {};
 
@@ -19,12 +22,24 @@ export class HeaderComponent implements OnInit {
   //   console.log(this.userId);
   // }
 
+  @ViewChild('selectWeek') selectWeek!: ElementRef<HTMLSelectElement>;
+
+  week:string = '';
 
 
   constructor() {}
 
   ngOnInit(): void{
    
+  }
+
+
+  changeWeek(){
+    this.week = this.selectWeek.nativeElement.value;
+  }
+
+  getWeek(): string{
+    return this.week;
   }
 
 

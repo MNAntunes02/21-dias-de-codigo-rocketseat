@@ -1,19 +1,25 @@
 <header class=" w-full p-6 bg-gradient-to-t from-transparent to-gray-900   duration-300 opcaity">
+<!-- <header class=" w-full p-6 bg-gradient-to-t from-transparent to-white  duration-300 opcaity"> -->
     <div class="flex container mx-auto justify-between items-center">
         
-        <a href="/" class="p-3 py-2 bg-indigo-700 rounded-lg hover:scale-110 hover:bg-indigo-600 duration-300 text-white font-bold text-lg">Home</a>
+        <a href="/" class="p-3 py-2 bg-indigo-700 rounded-lg hover:scale-110 hover:bg-indigo-600 duration-300 text-white font-bold text-lg">Semana 1</a>
 
+        <!-- <select name="select" class="p-3 py-2 bg-indigo-700 rounded-lg text-white font-bold text-lg" #selectWeek (click)="changeWeek()">
+            <option value="week1" selected>Semana 1</option>
+            <option value="week2" class="bg-pink-700">Semana 2</option>
+            <option value="week3" disabled>Semana 3</option>
+        </select> -->
 
-        <a [matMenuTriggerFor]="menu" aria-label="menu burger" class="w-8 flex sm:hidden md:hidden cursor-pointer">
+        <a *ngIf="week == 'week1'" [matMenuTriggerFor]="menu" aria-label="menu burger" class="w-8 flex sm:hidden md:hidden cursor-pointer">
             <mat-icon color="primary">menu</mat-icon>
         </a>
-        <mat-menu #menu="matMenu" class="bg-gray-900 w-40 flex justify-center">
+        <mat-menu  #menu="matMenu" class="bg-gray-900 w-40 flex justify-center">
             <a mat-menu-item href="/hellowworld" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Hello World!</a>
-            <a mat-menu-item disabled href="/" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Botão</a>
-            <a mat-menu-item disabled href="/" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Calculadora</a>
-            <a mat-menu-item disabled href="/" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">404</a>
-            <a mat-menu-item disabled href="/" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Card</a>
-            <a mat-menu-item disabled href="/" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Contador</a>
+            <a mat-menu-item href="/button-animated" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Botão</a>
+            <a mat-menu-item href="/calculator" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Calculadora</a>
+            <a mat-menu-item href="/page-not-found" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">404</a>
+            <a mat-menu-item href="/card" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Card</a>
+            <a mat-menu-item href="/contador" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Contador</a>
         </mat-menu>
 
 
@@ -22,9 +28,19 @@
             <a href="/button-animated" class="pl-5 hover:text-indigo-500 duration-300 text-white">Botão</a>
             <a href="/calculator" class="pl-5 hover:text-indigo-500 duration-300 text-white">Calculadora</a>
             <a href="/page-not-found" class="pl-5 hover:text-indigo-500 duration-300 text-white">404</a>
-            <a href="/card" class="pl-5 hover:text-indigo-500 duration-300 text-white nav-active">Card</a>
-            <a href="/contador" class="pl-5 hover:text-indigo-500 duration-300">Contador</a>
+            <a href="/card" class="pl-5 hover:text-indigo-500 duration-300 text-white">Card</a>
+            <a href="/contador" class="pl-5 hover:text-indigo-500 duration-300 text-white">Contador</a>
         </nav>
+        
+        <!-- <nav class="text-gray-600 font-medium text-lg h-full leading-none items-center space-x-5 divide-x divide-gray-500 hidden sm:flex md:flex">
+            <a href="/hellow-world" class="pl-5 hover:text-blue-700
+            *96 duration-300 text-blue-500 font-bold">Hello World!</a>
+            <a href="/button-animated" class="pl-5 hover:text-blue-700 duration-300 text-blue-500 font-bold">Botão</a>
+            <a href="/calculator" class="pl-5 hover:text-blue-700 duration-300 text-blue-500 font-bold">Calculadora</a>
+            <a href="/page-not-found" class="pl-5 hover:text-blue-700 duration-300 text-blue-500 font-bold">404</a>
+            <a href="/card" class="pl-5 hover:text-blue-700 duration-300 text-blue-500 font-bold">Card</a>
+            <a href="/contador" class="pl-5 hover:text-blue-700 duration-300 text-blue-500 font-bold">Contador</a>
+        </nav> -->
 
 
     </div>

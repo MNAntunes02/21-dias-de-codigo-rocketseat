@@ -1,0 +1,10 @@
+<div class="w-full h-full flex flex-col justify-center items-center">
+    <p class="Digital text-9xl text-indigo-600">{{ numContador }}</p>
+    <div class=" bg-black text-white rounded-xl mt-10 bg-opacity-50 flex justify-center items-center">
+        <button class="px-10 py-3 text-5xl flex items-center justify-center" (click)="start()"><mat-icon>play_arrow</mat-icon></button>
+        <button class="px-10 py-3 text-5xl flex items-center justify-center" (click)="pause()"><mat-icon>pause</mat-icon></button>
+        <button class="px-10 py-3 text-5xl flex items-center justify-center" (click)="stop()"><mat-icon>stop</mat-icon></button>
+    </div>
+</div>
+
+

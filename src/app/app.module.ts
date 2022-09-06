@@ -2,6 +2,7 @@ import { ElementRef, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog'
 import { MatButtonModule } from '@angular/material/button'
@@ -18,6 +19,9 @@ import { ButtonAnimatedComponent } from './pages/button-animated/button-animated
 import { CalculatorComponent } from './pages/calculator/calculator.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { CardComponent } from './pages/card/card.component';
+import { ContadorComponent } from './pages/contador/contador.component';
+import { MaterialModule } from "./material-module/material-module.module";
+import { ThemeComponent } from './pages/theme/theme.component';
 
 
 
@@ -31,7 +35,9 @@ import { CardComponent } from './pages/card/card.component';
     ButtonAnimatedComponent,
     CalculatorComponent,
     PageNotFoundComponent,
-    CardComponent
+    CardComponent,
+    ContadorComponent,
+    ThemeComponent
     
   ],
   imports: [
@@ -43,8 +49,10 @@ import { CardComponent } from './pages/card/card.component';
     MatIconModule,
     MatDialogModule,
     MatButtonModule,
+    MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
