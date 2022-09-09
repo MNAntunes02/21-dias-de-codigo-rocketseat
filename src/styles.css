@@ -6,11 +6,9 @@
 
 body{
     background-image: url(./assets/bg-stars.jpg);
-    /* background-image: url(./assets/blue-sky.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: black; */
 }
 
 @font-face {
@@ -40,6 +38,6 @@ body{
     @apply text-indigo-500;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 101vh; }
+body { font-family: Roboto, "Helvetica Neue", sans-serif; }
 

@@ -7,7 +7,7 @@
 }
 
 .button-calc{
-    @apply p-2 w-20 bg-slate-700  rounded-xl shadow-buttons hover:bg-slate-800 transition-colors;
+    @apply p-2 w-16 bg-slate-700  rounded-xl shadow-buttons hover:bg-slate-800 transition-colors;
     
 }
 
@@ -33,12 +33,12 @@
 }
 
 .button-on{
-    @apply w-full h-[75px] bg-indigo-700 rounded-full leading-5 text-base shadow-buttons text-gray-300 hover:bg-indigo-800 transition-colors -rotate-12;
+    @apply w-full h-[55px] bg-indigo-700 rounded-full leading-5 text-base shadow-buttons text-gray-300 hover:bg-indigo-800 transition-colors;
 }
 
 @keyframes neon {
     from{
-        filter: drop-shadow(0 0 4rem rgba(0, 0, 0, .5));
+        filter: drop-shadow(0 0 7rem rgba(79, 70, 229, .5));
     }
     to{
         filter: drop-shadow(0 0 8rem rgba(79, 70, 229, .5));

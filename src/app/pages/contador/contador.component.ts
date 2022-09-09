@@ -14,6 +14,7 @@ export class ContadorComponent implements OnInit {
   tempo: number = 1000;//Quantos milésimos valem 1 segundo?
   cron: any = 0;
   format : string = '';
+  IsStart : boolean = false;
 
   constructor() { }
 
@@ -34,26 +35,32 @@ export class ContadorComponent implements OnInit {
 
   //Inicia o temporizador
   start(): void {
+    if (!this.IsStart) {
+      this.IsStart = true;
       this.cron = setInterval(() => { this.timer(); }, this.tempo);
+    }
   }
 
   //Para o temporizador mas não limpa as variáveis
   pause() {
-      clearInterval(this.cron);
+    this.IsStart = false;
+    clearInterval(this.cron);
   }
 
   //Para o temporizador e limpa as variáveis
   stop() {
-      clearInterval(this.cron);
-      this.hh = 0;
-      this.mm = 0;
-      this.ss = 0;
+    this.IsStart = false;
+    clearInterval(this.cron);
+    this.hh = 0;
+    this.mm = 0;
+    this.ss = 0;
 
-      this.numContador = '00:00:00';
+    this.numContador = '00:00:00';
   }
 
   //Faz a contagem do tempo e exibição
   timer() {
+    
     this.ss++; //Incrementa +1 na variável ss
 
     if (this.ss == 60) { //Verifica se deu 59 segundos

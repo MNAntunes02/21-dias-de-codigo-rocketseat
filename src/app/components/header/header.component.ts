@@ -24,7 +24,6 @@ export class HeaderComponent implements OnInit {
 
   @ViewChild('selectWeek') selectWeek!: ElementRef<HTMLSelectElement>;
 
-  week:string = '';
 
 
   constructor() {}
@@ -33,14 +32,6 @@ export class HeaderComponent implements OnInit {
    
   }
 
-
-  changeWeek(){
-    this.week = this.selectWeek.nativeElement.value;
-  }
-
-  getWeek(): string{
-    return this.week;
-  }
 
 
 }

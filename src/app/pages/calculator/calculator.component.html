@@ -1,7 +1,7 @@
 <div class="w-full h-full flex justify-center items-center duration-75">
-    <div class="text-white bg-gray-900 p-8 rounded-3xl shadow-calculator duration-300" #neon>
+    <div class="text-white bg-gray-900 p-6 rounded-3xl shadow-calculator duration-300" #neon>
         <div class="flex justify-between">
-            <div class="flex justify-between w-1/2 h-14 bg-gray-800 rounded-xl overflow-hidden border-4 border-gray-900 shadow-inside-black">
+            <div class="flex justify-between w-1/2 h-12 bg-gray-800 rounded-xl overflow-hidden border-4 border-gray-900 shadow-inside-black">
                 <div class="w-full h-16 border border-collapse border-gray-600 border-t-0 border-l-0 opacity-50"></div>
                 <div class="w-full h-16 border border-collapse border-gray-600 border-t-0 opacity-50"></div>
                 <div class="w-full h-16 border border-collapse border-gray-600 border-t-0 opacity-50"></div>
@@ -38,7 +38,7 @@
             <button class="button-calc" #gridButtons (click)="returnValue(1)">1</button>
             <button class="button-calc" #gridButtons (click)="returnValue(2)">2</button>
             <button class="button-calc" #gridButtons (click)="returnValue(3)">3</button>
-            <button class="p-4 w-20 rounded-xl bg-indigo-700 row-span-2 shadow-buttons hover:bg-indigo-800 transition-colors text-gray-300" #gridButtons (click)="returnValue('+')">+</button>
+            <button class="p-4 w-16 rounded-xl bg-indigo-700 row-span-2 shadow-buttons hover:bg-indigo-800 transition-colors text-gray-300" #gridButtons (click)="returnValue('+')">+</button>
             <button class="button-calc" #gridButtons (click)="returnValue(0)">0</button>
             <button class="button-calc" #gridButtons (click)="returnValue('.')">.</button>
             <button class="button-calc" #gridButtons (click)="returnValue('=')">=</button>

@@ -1,20 +1,14 @@
-<header class=" w-full p-6 bg-gradient-to-t from-transparent to-gray-900   duration-300 opcaity">
+<header class=" w-full p-6 bg-gradient-to-t from-transparent to-black  duration-300 opcaity">
 <!-- <header class=" w-full p-6 bg-gradient-to-t from-transparent to-white  duration-300 opcaity"> -->
     <div class="flex container mx-auto justify-between items-center">
         
-        <a href="/" class="p-3 py-2 bg-indigo-700 rounded-lg hover:scale-110 hover:bg-indigo-600 duration-300 text-white font-bold text-lg">Semana 1</a>
+        <a href="/" class="p-3 py-2 bg-indigo-700 rounded-lg hover:scale-110 hover:bg-indigo-600 duration-300 text-white font-bold text-lg">Parte 1</a>
 
-        <!-- <select name="select" class="p-3 py-2 bg-indigo-700 rounded-lg text-white font-bold text-lg" #selectWeek (click)="changeWeek()">
-            <option value="week1" selected>Semana 1</option>
-            <option value="week2" class="bg-pink-700">Semana 2</option>
-            <option value="week3" disabled>Semana 3</option>
-        </select> -->
-
-        <a *ngIf="week == 'week1'" [matMenuTriggerFor]="menu" aria-label="menu burger" class="w-8 flex sm:hidden md:hidden cursor-pointer">
+        <a [matMenuTriggerFor]="menu" aria-label="menu burger" class="flex lg:hidden cursor-pointer">
             <mat-icon color="primary">menu</mat-icon>
         </a>
         <mat-menu  #menu="matMenu" class="bg-gray-900 w-40 flex justify-center">
-            <a mat-menu-item href="/hellowworld" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Hello World!</a>
+            <a mat-menu-item href="/hellow-world" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Hello World!</a>
             <a mat-menu-item href="/button-animated" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Botão</a>
             <a mat-menu-item href="/calculator" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Calculadora</a>
             <a mat-menu-item href="/page-not-found" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">404</a>

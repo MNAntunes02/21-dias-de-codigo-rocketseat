@@ -106,24 +106,6 @@ export class CalculatorComponent implements OnInit {
     this.previous = "";
     this.op = "";
 
-    // this.neon.nativeElement.setAttribute('class','text-white bg-gray-900 p-8 rounded-3xl shadow-calculator  duration-300')
+    this.neon.nativeElement.setAttribute('class','text-white bg-gray-900 p-6 rounded-3xl shadow-calculator animate-neon duration-300')
   }  
 }
-
-// buttons: any = [];
-
-// @ViewChild('btoff') btoff! : ElementRef<HTMLButtonElement>;
-// @ViewChild('bton') btOn! : ElementRef<HTMLButtonElement>;
-
-
-
-
-// this.buttons = this.meubutton.nativeElement.querySelectorAll('button');
-
-// this.buttons.array.forEach((element: any) => {
-//     element.addEventListener("click", (e:any) => {
-//       console.log(e);
-//     })
-// });
-
-    // this.buttons = this.meubutton.nativeElement.querySelectorAll('button');
