@@ -40,7 +40,7 @@ input:checked + label{
 
 /* ball com input true */
 input:checked + label::after{
-    left: calc(100%-.5rem);
+    left: calc(100%.5rem);
     transform: translateX(130%);
 }
 
