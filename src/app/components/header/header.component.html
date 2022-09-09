@@ -2,40 +2,29 @@
 <!-- <header class=" w-full p-6 bg-gradient-to-t from-transparent to-white  duration-300 opcaity"> -->
     <div class="flex container mx-auto justify-between items-center">
         
-        <a routerLink="" class="p-3 py-2 bg-indigo-700 rounded-lg hover:scale-110 hover:bg-indigo-600 duration-300 text-white font-bold text-lg">Parte 1</a>
+        <a [routerLink]="['']" class="p-3 py-2 bg-indigo-700 rounded-lg hover:scale-110 hover:bg-indigo-600 duration-300 text-white font-bold text-lg">Parte 1</a>
 
         <a [matMenuTriggerFor]="menu" aria-label="menu burger" class="flex lg:hidden cursor-pointer">
             <mat-icon color="primary">menu</mat-icon>
         </a>
         <mat-menu  #menu="matMenu" class="bg-gray-900 w-40 flex justify-center">
-            <a mat-menu-item routerLink="hellow-world" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Hello World!</a>
-            <a mat-menu-item routerLink="button-animated" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Botão</a>
-            <a mat-menu-item routerLink="calculator" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Calculadora</a>
-            <a mat-menu-item routerLink="page-not-found" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">404</a>
-            <a mat-menu-item routerLink="card" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Card</a>
-            <a mat-menu-item routerLink="contador" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Contador</a>
+            <a mat-menu-item [routerLink]="['/hellow-world']" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Hello World!</a>
+            <a mat-menu-item [routerLink]="['/button-animated']" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Botão</a>
+            <a mat-menu-item [routerLink]="['/calculator']" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Calculadora</a>
+            <a mat-menu-item [routerLink]="['/page-not-found']" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">404</a>
+            <a mat-menu-item [routerLink]="['/card']" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Card</a>
+            <a mat-menu-item [routerLink]="['/contador']" class="hover:text-indigo-500 duration-300 text-white font-medium text-lg">Contador</a>
         </mat-menu>
 
 
         <nav class="text-gray-600 font-medium text-lg h-full leading-none items-center space-x-5 divide-x divide-gray-500 hidden sm:flex md:flex">
-            <a routerLink="hellow-world" class="pl-5 hover:text-indigo-500 duration-300 text-white">Hello World!</a>
-            <a routerLink="button-animated" class="pl-5 hover:text-indigo-500 duration-300 text-white">Botão</a>
-            <a routerLink="calculator" class="pl-5 hover:text-indigo-500 duration-300 text-white">Calculadora</a>
-            <a routerLink="page-not-found" class="pl-5 hover:text-indigo-500 duration-300 text-white">404</a>
-            <a routerLink="card" class="pl-5 hover:text-indigo-500 duration-300 text-white">Card</a>
-            <a routerLink="contador" class="pl-5 hover:text-indigo-500 duration-300 text-white">Contador</a>
+            <a [routerLink]="['/hellow-world']" class="pl-5 hover:text-indigo-500 duration-300 text-white">Hello World!</a>
+            <a [routerLink]="['/button-animated']" class="pl-5 hover:text-indigo-500 duration-300 text-white">Botão</a>
+            <a [routerLink]="['calculator']" class="pl-5 hover:text-indigo-500 duration-300 text-white">Calculadora</a>
+            <a [routerLink]="['page-not-found']" class="pl-5 hover:text-indigo-500 duration-300 text-white">404</a>
+            <a [routerLink]="['card']" class="pl-5 hover:text-indigo-500 duration-300 text-white">Card</a>
+            <a [routerLink]="['contador']" class="pl-5 hover:text-indigo-500 duration-300 text-white">Contador</a>
         </nav>
-        
-        <!-- <nav class="text-gray-600 font-medium text-lg h-full leading-none items-center space-x-5 divide-x divide-gray-500 hidden sm:flex md:flex">
-            <a routerLink="/hellow-world" class="pl-5 hover:text-blue-700
-            *96 duration-300 text-blue-500 font-bold">Hello World!</a>
-            <a routerLink="/button-animated" class="pl-5 hover:text-blue-700 duration-300 text-blue-500 font-bold">Botão</a>
-            <a routerLink="/calculator" class="pl-5 hover:text-blue-700 duration-300 text-blue-500 font-bold">Calculadora</a>
-            <a routerLink="/page-not-found" class="pl-5 hover:text-blue-700 duration-300 text-blue-500 font-bold">404</a>
-            <a routerLink="/card" class="pl-5 hover:text-blue-700 duration-300 text-blue-500 font-bold">Card</a>
-            <a routerLink="/contador" class="pl-5 hover:text-blue-700 duration-300 text-blue-500 font-bold">Contador</a>
-        </nav> -->
-
 
     </div>
 </header>
