@@ -7,6 +7,12 @@
     }
 }
 
+.kd{
+    background-image: url(../../../assets/kd.gif);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 p{
     animation: neon 3s alternate infinite ease-in-out;

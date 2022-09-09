@@ -13,12 +13,12 @@ body{
 
 @font-face {
     font-family: Hacked;
-    src: url("./assets/font/HACKED.ttf");
+    src: url(./assets/font/HACKED.ttf);
 }
 
 @font-face {
     font-family: Digital;
-    src: url("./assets/font/Open24DisplaySt.ttf");
+    src: url(./assets/font/Open24DisplaySt.ttf);
 }
 
 .Digital{
