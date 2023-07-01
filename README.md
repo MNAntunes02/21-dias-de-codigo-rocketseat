@@ -1,3 +1,7 @@
+# Acesse o [site](https://mnantunes02.github.io/21-dias-de-codigo-rocketseat/)
+
+![web](https://user-images.githubusercontent.com/86163211/189531507-aaf63b5a-eb39-4ba4-9aac-5fcee1e04f06.png)
+
 # 21DiasDeCodigoRocketseat
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
