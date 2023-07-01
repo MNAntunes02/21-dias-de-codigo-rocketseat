@@ -2,11 +2,11 @@
     animation: blinkCursor 1000ms steps(30) infinite normal, typing 4s steps(30) normal;
     white-space: nowrap;
     overflow: hidden;
-    width: 258px;
+    width: 300px;
 }
 
 
-@keyframes blinkCursor {
+/* @keyframes blinkCursor {
     from {
         border-right: 3px solid #cccccc;
     }
@@ -22,7 +22,7 @@
     to {
         width: 258px;
     }
-}
+} */
 
 
 /* 640px */
