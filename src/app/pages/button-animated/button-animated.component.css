@@ -84,7 +84,7 @@ input:checked + label::after{
     border-radius: 50%;
     background-color: rgb(67 56 202 / 1);
     box-shadow: 0 0 .5em rgb(96, 44, 216),0 0 2em rgb(92, 43, 226),0 0 5em blue;
-    filter: drop-shadow(0 0 .5rem blueviolet);
+    filter: drop-shadow(0 0 .5rem blue);
 
     animation: animate linear infinite;
     animation-duration: calc(90s / var(--i));

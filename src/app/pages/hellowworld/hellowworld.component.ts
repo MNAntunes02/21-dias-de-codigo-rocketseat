@@ -20,7 +20,7 @@ export class HellowworldComponent implements OnInit , AfterViewInit{
   }
 
   ngAfterViewInit(): void {
-    // gsap.to(this.hello.nativeElement, {duration: 2, text: "This is the new text", ease: "none"});
+    gsap.to(this.hello.nativeElement, {duration: 3, text: "Hello World!", ease: "none"});
   }
 
 }

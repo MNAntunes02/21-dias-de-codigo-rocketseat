@@ -15,6 +15,7 @@ export class ContadorComponent implements OnInit {
   cron: any = 0;
   format : string = '';
   IsStart : boolean = false;
+  botaoSelecionado = "";
 
   constructor() { }
 
@@ -29,22 +30,20 @@ export class ContadorComponent implements OnInit {
     this.numContador--;
   }
 
-
-
-
-
   //Inicia o temporizador
   start(): void {
     if (!this.IsStart) {
       this.IsStart = true;
       this.cron = setInterval(() => { this.timer(); }, this.tempo);
     }
+    this.botaoSelecionado = "start"
   }
 
   //Para o temporizador mas não limpa as variáveis
   pause() {
     this.IsStart = false;
     clearInterval(this.cron);
+    this.botaoSelecionado = "pause"
   }
 
   //Para o temporizador e limpa as variáveis
@@ -56,6 +55,8 @@ export class ContadorComponent implements OnInit {
     this.ss = 0;
 
     this.numContador = '00:00:00';
+
+    this.botaoSelecionado = "stop"
   }
 
   //Faz a contagem do tempo e exibição
@@ -81,6 +82,6 @@ export class ContadorComponent implements OnInit {
 
     //Retorna o valor tratado
     return this.format;
-}
+  }
 
 }
